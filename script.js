@@ -99,6 +99,7 @@ const editTask = (e)=>{
  description.value =res.children[0].innerHTML;
  amount.value=res.children[1].innerHTML;
  Category.value=res.children[2].innerHTML;
+ deleteTask(e);
 }
 
 const deleteTask= (e)=>{
