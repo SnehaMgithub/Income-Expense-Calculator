@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="cal-app">
+      <div class="inp-field">
+        <h1>Income Expense Calculator</h1>
+        <div class="input-section">
+          <label for="inp-text">Description:</label>
+          <input type="text" id="inp-text" />
+          <label for="inp-amt">Amount:</label>
+          <input type="number" id="inp-amt" />
+          <label for="type">Categories:</label>
+          <select id="type">
+            <option value="Income">Income</option>
+            <option value="Expense">Expense</option></select>
+          <button id="add-btn">Add Entry</button>
+        </div>
+      </div>
+      <div class="right">
+        <div class="balance">
+          <h1>Total Balance: <span id="t-bln">₹0</span></h1>
+          <h3>Income:<span id="i-bln">₹0</span></h3>
+          <h3>Expense:<span id="e-bln">₹0</span></h3>
+        </div>
+
+        <div class="filter-btns">
+          <button id="all-filter">All</button>
+          <button id="i-filter">Income</button>
+          <button id="e-filter">Expense</button>
+        </div>
+        <div class="table-section">
+        <table id="table">
+          <thead>
+            <tr>
+              <th>Description</th>
+              <th>Amount</th>
+              <th>Type</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="t-body"></tbody>
+        </table>
+      </div>
+      </div>
+      <script src="/script.js"></script>
+    </div>
+  </body>
+</html>
