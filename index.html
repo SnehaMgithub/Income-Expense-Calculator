@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
     <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/x-icon" href="/image/google-calculator-icon.png">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -12,6 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <title>Calculator</title>
   </head>
   <body>
     <div class="cal-app">
@@ -36,11 +38,21 @@
           <h3>Expense:<span id="e-bln">₹0</span></h3>
         </div>
 
-        <div class="filter-btns">
-          <button id="all-filter">All</button>
+        <!-- <div class="filter-btns"> -->
+          <!-- <button id="all-filter">All</button>
           <button id="i-filter">Income</button>
-          <button id="e-filter">Expense</button>
-        </div>
+          <button id="e-filter">Expense</button> -->
+          <form class="filter-btns">
+          <label>
+          <input type="radio"  name="option" id="all-filter" value="1">All
+          </label>
+          <label>
+          <input type="radio" name="option" id="i-filter" value="2">Income
+          </label>
+          <label>
+          <input type="radio" name="option" id="e-filter" value="3">Expense
+        </label>
+        </form>
         <div class="table-section">
         <table id="table">
           <thead>

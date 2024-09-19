@@ -13,7 +13,7 @@ const table = document.getElementById("t-body")
 function check(){
     if(description.value ==="" || amount.value ==="" || Category.value ==="")
     {
-        alert("Input Fields Cannot Be Empty 😔")
+        alert("Oops! It looks like some input fields are empty. 😔")
     }
     else{
       getData();
